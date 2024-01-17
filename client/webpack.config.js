@@ -25,7 +25,6 @@ module.exports = () => {
         description:
           "A web-based text editor that can be used both online and offline.",
         background_color: "#ffffff",
-        crossorigin: "use-credentials",
         inject: true,
         fingerprints: false,
         icons: [
@@ -53,7 +52,7 @@ module.exports = () => {
             loader: "babel-loader",
             options: {
               presets: ["@babel/preset-env", "@babel/preset-react"],
-              plugins: ["@babel/plugin-proposal-class-properties"],
+              plugins: ["@babel/plugin-proposal-object-rest-spread"]
             },
           },
         },
